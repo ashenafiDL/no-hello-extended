@@ -1,6 +1,8 @@
-export const Info = () => {
+import Page from "../components/Page";
+
+export default function Explanation1() {
   return (
-    <div className="flex text-justify h-screen w-full snap-start snap-always flex-col justify-center bg-blue-700 px-96 text-2xl">
+    <Page>
       <p className="py-2">
         Note that you get help minutes sooner, and you don't make them wait.
         Instead the coworker can start thinking about your question right away.
@@ -17,6 +19,6 @@ export const Info = () => {
         "do you have a sec?", "yt?", and "ping".{" "}
         <strong>Just ask the question</strong>
       </p>
-    </div>
+    </Page>
   );
-};
+}

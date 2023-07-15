@@ -1,6 +1,8 @@
-export const DoThis = () => {
+import Page from "../components/Page";
+
+export default function Solution() {
   return (
-    <div className="flex h-screen w-full snap-start snap-always flex-col justify-center bg-slate-700 px-96">
+    <Page>
       <h4 className="text-3xl font-bold">Please do this instead</h4>
       <div className="flex flex-col">
         <div className="flex w-fit flex-col self-end rounded-3xl rounded-br-none bg-gray-600 px-4 py-2">
@@ -12,6 +14,6 @@ export const DoThis = () => {
           <span className="text-3xl">[Answers question...]</span>
         </div>
       </div>
-    </div>
+    </Page>
   );
-};
+}

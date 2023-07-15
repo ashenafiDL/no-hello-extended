@@ -1,6 +1,8 @@
-export default function MoreInfo() {
+import Page from "../components/Page";
+
+export default function Explanation2() {
   return (
-    <div className="flex h-screen w-full snap-start snap-always flex-col justify-center bg-purple-700 px-96 text-justify text-2xl">
+    <Page>
       If you feel it's brusque to simply say "Hi" and ask the question, you can
       do something like this:
       <div className="flex flex-col">
@@ -16,6 +18,6 @@ export default function MoreInfo() {
         before they come back, they can still answer your question, instead of
         just staring at a "Hello" and wondering what they missed.
       </div>
-    </div>
+    </Page>
   );
 }

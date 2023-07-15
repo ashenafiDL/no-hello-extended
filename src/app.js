@@ -1,19 +1,19 @@
-import { DoThis } from "./components/doThis";
-import { Header } from "./components/header";
-import { Info } from "./components/info";
-import { PleaseDontJustSayHello } from "./components/pleaseDontJustSayHello";
-import MoreInfo from "./components/moreinfo";
-import Footer from "./components/Footer";
+import Explanation1 from "./pages/Explanation1";
+import Explanation2 from "./pages/Explanation2";
+import Hero from "./pages/Hero";
+import Problem from "./pages/Problem";
+import Solution from "./pages/Solution";
+import Warning from "./pages/Warning";
 
 export const App = () => {
   return (
     <div className="snap-y snap-mandatory scroll-smooth">
-      <Header />
-      <PleaseDontJustSayHello />
-      <DoThis />
-      <Info />
-      <MoreInfo />
-      <Footer />
+      <Hero />
+      {/* <Problem />
+      <Solution />
+      <Explanation1 />
+      <Explanation2 />
+      <Warning /> */}
     </div>
   );
 };

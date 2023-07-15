@@ -1,6 +1,8 @@
-export const PleaseDontJustSayHello = () => {
+import Page from "../components/Page";
+
+export default function Problem() {
   return (
-    <div className="flex h-screen w-full snap-start snap-always flex-col justify-center bg-yellow-700 px-96">
+    <Page>
       <h4 className="text-3xl">Please Don't Say Just Hello In Chat</h4>
       <div className="flex flex-col">
         <div className="flex w-fit flex-col self-end rounded-3xl rounded-br-none bg-gray-600 px-4 py-2">
@@ -23,7 +25,10 @@ export const PleaseDontJustSayHello = () => {
           <span className="text-3xl">Oh thats [answer]....</span>
         </div>
       </div>
-      <p>It's as if you called someone on the phone and said "Hi!" and then put them on hold!</p>
-    </div>
+      <p>
+        It's as if you called someone on the phone and said "Hi!" and then put
+        them on hold!
+      </p>
+    </Page>
   );
-};
+}
