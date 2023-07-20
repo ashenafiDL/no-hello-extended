@@ -1,8 +1,7 @@
 export default function Page({ background, children }) {
   return (
-    //   TODO - find a way to enable snap feature
     <div
-      className={`flex h-screen w-full ${background} flex-col justify-center px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96`}
+      className={`flex h-screen w-full snap-start snap-always flex-col justify-center px-4 md:px-16 lg:px-32 xl:px-64 ${background}`}
     >
       {children}
     </div>

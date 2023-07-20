@@ -7,13 +7,13 @@ import Warning from "./pages/Warning";
 
 export const App = () => {
   return (
-    <div className="snap-y snap-mandatory scroll-smooth">
+    <div className="snap-y snap-mandatory scroll-smooth h-screen overflow-auto">
       <Hero />
-      {/* <Problem />
+      <Problem />
       <Solution />
       <Explanation1 />
       <Explanation2 />
-      <Warning /> */}
+      <Warning />
     </div>
   );
 };
