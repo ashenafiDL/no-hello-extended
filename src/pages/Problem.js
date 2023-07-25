@@ -2,7 +2,7 @@ import Page from "../components/Page";
 
 export default function Problem() {
   return (
-    <Page>
+    <Page background="bg-white dark:bg-black">
       <h4 className="text-3xl">Please Don't Say Just Hello In Chat</h4>
       <div className="flex flex-col">
         <div className="flex w-fit flex-col self-end rounded-3xl rounded-br-none bg-gray-600 px-4 py-2">

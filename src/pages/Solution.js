@@ -2,7 +2,7 @@ import Page from "../components/Page";
 
 export default function Solution() {
   return (
-    <Page>
+    <Page background={"bg-white dark:bg-black"}>
       <h4 className="text-3xl font-bold">Please do this instead</h4>
       <div className="flex flex-col">
         <div className="flex w-fit flex-col self-end rounded-3xl rounded-br-none bg-gray-600 px-4 py-2">

@@ -2,7 +2,7 @@ import Page from "../components/Page";
 
 export default function Explanation2() {
   return (
-    <Page>
+    <Page background={"bg-white dark:bg-black"}>
       If you feel it's brusque to simply say "Hi" and ask the question, you can
       do something like this:
       <div className="flex flex-col">

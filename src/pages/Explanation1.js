@@ -2,7 +2,7 @@ import Page from "../components/Page";
 
 export default function Explanation1() {
   return (
-    <Page>
+    <Page background="bg-white dark:bg-black">
       <p className="py-2">
         Note that you get help minutes sooner, and you don't make them wait.
         Instead the coworker can start thinking about your question right away.
