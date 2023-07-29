@@ -72,16 +72,15 @@ export default function Hero() {
       </div>
 
       <div>
-        <p className="text-5xl font-bold text-white md:-mx-[.65rem] md:text-9xl">
+        <h1 className="text-[min(19vw,_8rem)] text-balance font-bold leading-tight text-white">
           <span className="mr-4">No</span>
           <span className="animate-blink border-r-2" id="typewrite"></span>
-        </p>
+        </h1>
 
         <p className="text-xl text-white md:text-3xl">
           Don't Say Just "Hello" in Chat.
         </p>
 
-        {/* TODO - Change the date to final deployment date */}
         <p className="my-8 ">{`${new Date().toDateString()}`}</p>
       </div>
 
