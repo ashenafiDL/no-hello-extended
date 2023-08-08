@@ -65,26 +65,30 @@ export default function Hero() {
 
   return (
     <Page background="bg-primary">
-      <div className="mb-2 w-fit rounded-full bg-black px-2.5 py-0.5 text-sm text-white md:mb-0 md:text-base">
-        <a href="https://www.nohello.com" target="_blank" rel="noreferrer">
-          Inspired by ↗
-        </a>
+      <div className="my-auto">
+        <div className="mb-2 w-fit rounded-full bg-black px-2.5 py-0.5 text-sm text-white md:mb-0 md:text-base">
+          <a href="https://www.nohello.com" target="_blank" rel="noreferrer">
+            Inspired by ↗
+          </a>
+        </div>
+
+        <div>
+          <h1 className="text-[min(19vw,_8rem)] font-bold leading-tight text-white">
+            <span className="mr-4">No</span>
+            <span className="animate-blink border-r-2" id="typewrite"></span>
+          </h1>
+
+          <p className="text-xl text-white md:text-3xl">
+            Don't Say Just "Hello" in Chat.
+          </p>
+
+          <p className="my-8 ">{`${new Date().toDateString()}`}</p>
+        </div>
       </div>
 
-      <div>
-        <h1 className="text-[min(19vw,_8rem)] text-balance font-bold leading-tight text-white">
-          <span className="mr-4">No</span>
-          <span className="animate-blink border-r-2" id="typewrite"></span>
-        </h1>
-
-        <p className="text-xl text-white md:text-3xl">
-          Don't Say Just "Hello" in Chat.
-        </p>
-
-        <p className="my-8 ">{`${new Date().toDateString()}`}</p>
+      <div className="mb-12 text-4xl font-bold animate-bounce text-black w-fit">
+        <span>↓</span>
       </div>
-
-      <p className="absolute bottom-8 mx-auto text-3xl">↓</p>
     </Page>
   );
 }

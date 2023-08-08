@@ -1,3 +1,4 @@
+import ProgressIndicator from "./components/ProgressIndicator";
 import Explanation1 from "./pages/Explanation1";
 import Explanation2 from "./pages/Explanation2";
 import Hero from "./pages/Hero";
@@ -7,7 +8,9 @@ import Warning from "./pages/Warning";
 
 export const App = () => {
   return (
-    <div className="snap-y snap-mandatory scroll-smooth h-screen overflow-auto">
+    <div className="h-screen snap-y snap-mandatory overflow-auto scroll-smooth">
+      <ProgressIndicator progress={26} />
+
       <Hero />
       <Problem />
       <Solution />
