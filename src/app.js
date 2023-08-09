@@ -9,7 +9,7 @@ import Warning from "./pages/Warning";
 export const App = () => {
   return (
     <div className="h-screen snap-y snap-mandatory overflow-auto scroll-smooth">
-      <ProgressIndicator progress={26} />
+      <ProgressIndicator />
 
       <Hero />
       <Problem />
