@@ -11,7 +11,7 @@ export default function Explanation2() {
         />
         <MessageBubble
           time="2010-07-19 12:32:12"
-          text="Hi -- if you're not busy I was wondering if I could ask a question. I'm working on [something] and I'm trying to do [etc...]"
+          text="Hi -- if you're not busy, I was wondering if you could help me with a coding challenge. I'm trying to calculate factorials in Python, and while I know a basic way, I'm curious about more advanced techniques."
           own
         />
         <SectionText

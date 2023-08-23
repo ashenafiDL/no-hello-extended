@@ -1,19 +1,25 @@
 export default function MessageBubble({ time, text, own }) {
   return (
+    // <section class="container w-fit p-4">
     <div
-      className={`w-fit max-w-[75%] rounded-2xl bg-primary my-2 px-4 py-2 ${
-        own
-          ? "self-end rounded-br-none bg-opacity-95"
-          : "rounded-bl-none bg-opacity-75"
+      class={`my-4 w-fit max-w-xl ${
+        own ? "self-end" : "self-start"
       }`}
     >
-      <div className="text-[1.2rem] leading-tight">{text}</div>
+      {/* Message content */}
       <div
-        className={`text-sm text-black text-opacity-95 ${
-          own ? "text-right" : ""
+        class={`flex flex-col gap-1 rounded-2xl  p-4 text-lg font-medium text-white ${
+          own ? "bg-primary rounded-br-none" : "bg-black rounded-bl-none"
         }`}
       >
-        {time}
+        <p>{text}</p>
+        <span
+          className={`${
+            own ? "text-gray-700" : "text-gray-400"
+          }`}
+        >
+          {time}
+        </span>
       </div>
     </div>
   );

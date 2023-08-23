@@ -15,12 +15,12 @@ export default function Problem() {
 
         <MessageBubble
           time="2010-07-19 12:34:01"
-          text="I am working on [something...]"
+          text="I'm working on a programming assignment and need to calculate factorials. Could you explain how to calculate them efficiently?"
           own
         />
         <MessageBubble
           time="2010-07-19 12:35:21"
-          text="Oh thats [answer]...."
+          text="Of course! Calculating factorials involves multiplying a number by all positive integers less than itself. To do this programmatically, you can use a loop, starting from 1 and multiplying each number up to your desired value. Alternatively, you can use recursion, where the factorial of n is n times the factorial of n-1, with a base case of factorial(0) being 1."
         />
       </div>
 
