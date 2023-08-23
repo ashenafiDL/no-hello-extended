@@ -86,7 +86,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mb-12 text-4xl font-bold animate-bounce text-black w-fit">
+      <div className="mb-12 w-fit animate-bounce text-4xl font-bold text-black">
         <span>↓</span>
       </div>
     </Page>
