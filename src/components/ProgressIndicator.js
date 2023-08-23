@@ -1,25 +1,14 @@
-import { useState , useEffect} from "react";
-
-export default function ProgressIndicator() {
-  const [width, setWidth] = useState(0);
-
-  const scrollHeight = () => {
-    var el = document.documentElement,
-      ScrollTop = el.scrollTop || document.body.scrollTop,
-      ScrollHeight = el.scrollHeight || document.body.scrollHeight;
-    var percent = (ScrollTop / (ScrollHeight - el.clientHeight)) * 100;
-    setWidth(percent)
+export default function ProgressIndicator({ progress }) {
+  const progressBarStyle = {
+    width: `${progress}%`,
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", scrollHeight);
-    console.log("width", width);
-    return () => window.removeEventListener("scroll", scrollHeight);
-  });
-
   return (
-    <div
-      className={`fixed -left-[1px] w-[${width}%] rounded-md top-0 h-2 bg-black`}
-    ></div>
+    <div className="fixed left-0 top-0 h-[5px] w-full">
+      <div
+        className={`h-full rounded-br-md rounded-tr-md bg-black shadow-md`}
+        style={progressBarStyle}
+      ></div>
+    </div>
   );
 }
