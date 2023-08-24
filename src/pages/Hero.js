@@ -36,7 +36,7 @@ export default function Hero() {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+    this.el.innerHTML = '<span className="wrap">' + this.txt + "</span>";
 
     var that = this;
     var delta = 200 - Math.random() * 100;
@@ -82,7 +82,7 @@ export default function Hero() {
             Don't Say Just "Hello" in Chat.
           </p>
 
-          <p className="my-8 ">{`${new Date().toDateString()}`}</p>
+          <p className="my-8 ">Thu Aug 24 2023</p>
         </div>
       </div>
 

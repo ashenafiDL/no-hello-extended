@@ -20,7 +20,7 @@ export default function Problem() {
         />
         <MessageBubble
           time="2010-07-19 12:35:21"
-          text="Of course! Calculating factorials involves multiplying a number by all positive integers less than itself. To do this programmatically, you can use a loop, starting from 1 and multiplying each number up to your desired value. Alternatively, you can use recursion, where the factorial of n is n times the factorial of n-1, with a base case of factorial(0) being 1."
+          text="Of course! To do this programmatically, you can use a loop, starting from 1 and multiplying each number up to your desired value."
         />
       </div>
 
